@@ -13,7 +13,7 @@ repositories {
     mavenCentral()
 }
 
-ext.uaaVersion = '4.24.0'
+ext.uaaVersion = '4.30.0'
 
 configurations {
     uaa
@@ -39,7 +39,7 @@ cargoRunLocal.dependsOn downloadUAA
 task uaa(dependsOn: cargoRunLocal) {}
 
 cargo {
-    containerId = 'tomcat8x'
+    containerId = 'tomcat9x'
     port = 8090
 
     deployable {
@@ -50,7 +50,7 @@ cargo {
     local {
         outputFile = file("$buildDir/uaa-server.log")
         installer {
-            installUrl = 'https://www-us.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.zip'
+            installUrl = 'https://downloads.apache.org/tomcat/tomcat-9/v9.0.34//bin/apache-tomcat-9.0.34.zip'
 
             downloadDir = file("$buildDir/download")
             extractDir = file("$buildDir/extract")

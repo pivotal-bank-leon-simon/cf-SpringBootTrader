@@ -15,7 +15,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/pivotalbank/cf-SpringBootTrader-config.git
+          uri: https://github.com/simonrowe/cf-SpringBootTrader-config.git
        # native:
        #    searchLocations: "/Users/srowe/workspace/pivotal-bank/cf-SpringBootTrader/cf-SpringBootTrader-config"
 ```
@@ -25,6 +25,8 @@ If you want the config server to use config from your local file system set spri
 ## Starting the config server and eureka
 ```spring cloud configserver eureka```
 
+### Starting Redis
+1. From the root directory of this project run ```docker-compose up -d```
 
 ## Starting UAA
 1. From the root directory of this project run ```./gradlew -b uaa-server/build.gradle uaa ```
@@ -33,8 +35,8 @@ If you want the config server to use config from your local file system set spri
 From the root project directory 
 1. Quotes Service - ```./gradlew -b quotes-service/build.gradle bootRun ```
 2. User Service - ```./gradlew -b user-service/build.gradle bootRun ```
-3. Account Service - ```./gradlew -b account-service/build.gradle bootRun ```
-4. Portolio Service - ```./gradlew -b portfolio-service/build.gradle bootRun ```
+3. Account Service - ```./gradlew -b accounts-service/build.gradle bootRun ```
+4. Portfolio Service - ```./gradlew -b portfolio-service/build.gradle bootRun ```
 5. Web UI - ```./gradlew -b web-ui/build.gradle bootRun ```
 
 Then nagivate to http://localhost:8080 and login with user: user/password.

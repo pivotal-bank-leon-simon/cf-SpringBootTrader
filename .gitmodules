@@ -1,21 +1,21 @@
 [submodule "quotes-service"]
 	path = quotes-service
-	url = https://github.com/simonrowe-pivotal/quotes-service.git
+	url = git@github.com:simonrowe/quotes-service.git
 [submodule "accounts-service"]
 	path = accounts-service
-	url = https://github.com/simonrowe-pivotal/accounts-service.git
+	url = git@github.com:simonrowe/accounts-service.git
 [submodule "portfolio-service"]
 	path = portfolio-service
-	url = https://github.com/simonrowe-pivotal/portfolio-service.git
+	url = git@github.com:simonrowe/portfolio-service.git
 [submodule "web-ui"]
 	path = web-ui
-	url = https://github.com/simonrowe-pivotal/web-ui.git
+	url = git@github.com:simonrowe/web-ui.git
 [submodule "scripts"]
 	path = scripts
-	url = https://github.com/simonrowe-pivotal/scripts
+	url = git@github.com:simonrowe/scripts
 [submodule "user-service"]
 	path = user-service
-	url = https://github.com/simonrowe-pivotal/user-service
+	url = git@github.com:simonrowe/user-service
 [submodule "cf-SpringBootTrader-config"]
 	path = cf-SpringBootTrader-config
-	url = https://github.com/simonrowe-pivotal/cf-SpringBootTrader-config.git
+	url = git@github.com:simonrowe/cf-SpringBootTrader-config.git
